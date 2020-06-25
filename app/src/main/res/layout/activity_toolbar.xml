@@ -6,22 +6,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.codepath.debuggingchallenges.activities.ToolbarActivity">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textSize="50sp"
-        android:text="@string/this_is_a_sample_of_really_large_text"
-        android:id="@+id/tvDescription"
-        android:layout_centerHorizontal="true" />
-
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
-        android:minHeight="?attr/actionBarSize"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:titleTextColor="@android:color/white"
-        android:background="?attr/colorPrimary">
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:titleTextColor="@android:color/white">
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/this_is_a_sample_of_really_large_text"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="50sp" />
+
     </androidx.appcompat.widget.Toolbar>
 
 </RelativeLayout>
